@@ -149,6 +149,18 @@ img {
 	color: #fff;
 }
 
+/* hide content initally */
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+}
+
+.show {
+	display: block !important;
+}
+
 #tab-1-content .tab-1-content-inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -270,14 +282,15 @@ img {
 	display: inline-block;
 	background: var(--primary-color);
 	color: #fff;
-	padding: .04rem 1.3rem;
+	padding: 0.4rem 1.3rem;
 	font-size: 1rem;
 	text-align: center;
 	border: none;
 	cursor: pointer;
 	margin-right: 0.5rem;
+	transition: opacity 0.2s ease-in;
 	outline: none;
-	box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
 	border-radius: 2px;
 }
 
